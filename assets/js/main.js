@@ -25,7 +25,7 @@ function createCalculator() {
       const expression = this.display.value;
 
       if (!expression) {
-        this.display.value = "Conta inválida";
+        alert("Conta inválida");
         this.isResultDisplayed = false;
         return;
       }
@@ -35,7 +35,7 @@ function createCalculator() {
         this.display.value = result;
         this.isResultDisplayed = true;
       } catch (e) {
-        this.display.value = "Conta inválida";
+        alert("Conta inválida");
         this.isResultDisplayed = false;
       }
     },
