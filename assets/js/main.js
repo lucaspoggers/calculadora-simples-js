@@ -50,6 +50,7 @@ function createCalculator() {
             this.isResultDisplayed = false;
           } else {
             this.btnToDisplay(el.innerText);
+            this.display.focus();
           }
         }
 
